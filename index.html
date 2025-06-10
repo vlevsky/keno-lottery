@@ -318,44 +318,36 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>0 or 1</td>
+                        <td>0, 1, 2, or 3</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>0.5</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
                         <td>4</td>
-                        <td>5</td>
+                        <td>0.75</td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>10</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td>20</td>
+                        <td>5</td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td>75</td>
+                        <td>25</td>
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td>200</td>
+                        <td>100</td>
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td>750</td>
+                        <td>500</td>
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td>10000</td>
+                        <td>2000</td>
                     </tr>
                 </tbody>
             </table>
@@ -513,15 +505,13 @@
             // Calculate payout based on matches
             function calculatePayout(matches, betAmount) {
                 switch(matches) {
-                    case 2: return betAmount * 0.5;
-                    case 3: return betAmount * 3;
-                    case 4: return betAmount * 5;
-                    case 5: return betAmount * 10;
-                    case 6: return betAmount * 20;
-                    case 7: return betAmount * 75;
-                    case 8: return betAmount * 200;
-                    case 9: return betAmount * 750;
-                    case 10: return betAmount * 10000;
+                    case 4: return betAmount * 0.75;
+                    case 5: return betAmount * 2;
+                    case 6: return betAmount * 5;
+                    case 7: return betAmount * 25;
+                    case 8: return betAmount * 100;
+                    case 9: return betAmount * 500;
+                    case 10: return betAmount * 2000;
                     default: return 0;
                 }
             }
